@@ -9,7 +9,17 @@
   <body>
     <script src="./vue.js"></script>
     <script>
-      console.log(Vue)
+      //响应式数据--->数据变化 能 监控到数据的变化
+      //监控到数据的 取值 和 更改值
+      const vm = new Vue({
+        data() {
+          //组件必须是函数  实例可以是函数和对象
+          return {
+            salary: '15k',
+            age: 23
+          }
+        }
+      })
     </script>
   </body>
 </html>
